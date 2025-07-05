@@ -1,166 +1,177 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Сибикин Нестор — Laugeed</title>
-  <style>
-    :root {
-      --bg-color: #121212;
-      --text-color: #f0f0f0;
-      --accent: #1e88e5;
-      --button-bg: #1f1f1f;
-      --button-hover: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laugeed — Нестор Сибикин</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Rubik', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+        header {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
 
-    body {
-      font-family: Arial, sans-serif;
-      background: var(--bg-color);
-      color: var(--text-color);
-      line-height: 1.6;
-      padding: 1.5rem;
-    }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #00ffff;
+        }
 
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
+        header p {
+            margin: 10px 0 0;
+            font-size: 20px;
+            color: #aaa;
+        }
 
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
+        section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
 
-    header p {
-      color: #aaa;
-      font-size: 1.1rem;
-    }
+        h2 {
+            font-size: 28px;
+            border-bottom: 2px solid #444;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
 
-    section {
-      margin-bottom: 2rem;
-      animation: fadeIn 1s ease;
-    }
+        p, li {
+            font-size: 18px;
+            line-height: 1.6;
+        }
 
-    h2 {
-      font-size: 1.7rem;
-      margin-bottom: 1rem;
-      color: var(--accent);
-    }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
 
-    ul {
-      list-style-type: disc;
-      margin-left: 1.5rem;
-    }
+        li ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
 
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
 
-    .button {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: var(--button-bg);
-      border: 2px solid var(--accent);
-      color: var(--text-color);
-      text-decoration: none;
-      padding: 0.6rem 1rem;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-    }
+        .button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #1f1f1f;
+            color: #fff;
+            border: 2px solid #00ffff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
 
-    .button:hover {
-      background: var(--button-hover);
-      transform: translateY(-2px);
-    }
+        .button:hover {
+            background-color: #00ffff;
+            color: #000;
+            transform: scale(1.05);
+        }
 
-    .button img {
-      width: 20px;
-      height: 20px;
-    }
+        .button img {
+            width: 24px;
+            height: 24px;
+        }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+        .personal-info {
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+            box-shadow: 0 0 10px rgba(255,255,255,0.1);
+        }
 
-    @media (max-width: 600px) {
-      body {
-        padding: 1rem;
-      }
-
-      .button {
-        flex: 1 1 100%;
-        justify-content: center;
-      }
-    }
-  </style>
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Сибикин Нестор</h1>
-    <p>Laugeed — Личный сайт</p>
-  </header>
+    <header>
+        <h1>Laugeed</h1>
+        <p>Личный сайт Нестора Сибикина</p>
+    </header>
 
-  <section>
-    <h2>🧾 Автобиография</h2>
-    <p>
-      Меня зовут Сибикин Нестор Романович, я родился 24 августа 2010 года в городе Донецк. В возрасте четырёх лет переехал в Курчатов, а с пяти лет живу в Москве. С раннего детства увлекаюсь спортом: в начальной школе занимался тхэквондо, в пятом классе — джиу-джитсу, а с шестого класса по настоящее время занимаюсь спортивным туризмом. В 14 лет мне пришлось переехать в Ликино-Дулёво, также в 14 лет у меня появились собственные YouTube‑каналы, сообщество ВКонтакте и личный профиль, через которые я начал развивать себя в интернете.
-    </p>
-  </section>
+    <section>
+        <h2>🧾 Автобиография</h2>
+        <p>Меня зовут Сибикин Нестор Романович, я родился 24 августа 2010 года в городе Донецк. В возрасте четырёх лет переехал в Курчатов, а с пяти лет живу в Москве. С раннего детства увлекаюсь спортом: в начальной школе занимался тхэквондо, в пятом классе — джиу-джитсу, а с шестого класса по настоящее время занимаюсь спортивным туризмом. В 14 лет мне пришлось переехать в Ликино-Дулёво, также в 14 лет у меня появились собственные YouTube‑каналы, сообщество ВКонтакте и личный профиль, через которые я начал развивать себя в интернете.</p>
+    </section>
 
-  <section>
-    <h2>📺 Проекты и ссылки</h2>
-    <p>С 14 лет я развиваю бренды и публикую контент:</p>
-    <div class="buttons">
-      <a class="button" href="https://youtube.com/@laugeed?si=xRrVrQ-2fGO0FaL5" target="_blank">
-        <img src="https://www.svgrepo.com/show/349405/youtube.svg" alt="YouTube">
-        Основной YouTube
-      </a>
-      <a class="button" href="https://www.youtube.com/@LaugeedGames" target="_blank">
-        <img src="https://www.svgrepo.com/show/349405/youtube.svg" alt="YouTube">
-        Игровой YouTube
-      </a>
-      <a class="button" href="https://vk.com/laugeed" target="_blank">
-        <img src="https://www.svgrepo.com/show/452231/vk.svg" alt="VK">
-        Сообщество ВК
-      </a>
-      <a class="button" href="https://vk.com/laugee" target="_blank">
-        <img src="https://www.svgrepo.com/show/452231/vk.svg" alt="VK">
-        Профиль ВК
-      </a>
-    </div>
-  </section>
+    <section>
+        <h2>📺 Проекты и ссылки</h2>
+        <p>С 14 лет я развиваю личный бренд и публикую контент под псевдонимом Laugeed.</p>
+        <div class="buttons">
+            <a class="button" href="https://youtube.com/@laugeed?si=xRrVrQ-2fGO0FaL5" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube">
+                Основной канал
+            </a>
+            <a class="button" href="https://www.youtube.com/@LaugeedGames" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube">
+                Игровой канал
+            </a>
+            <a class="button" href="https://vk.com/laugeed" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/vk-com.png" alt="VK">
+                Сообщество ВК
+            </a>
+            <a class="button" href="https://vk.com/laugee" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/vk-com.png" alt="VK">
+                Профиль ВК
+            </a>
+        </div>
+    </section>
 
-  <section>
-    <h2>🎯 Цели и интересы</h2>
-    <p>
-      Моя главная цель — стать узнаваемым и влиятельным интернет-персонажем, развивать личные проекты, строить качественный контент и мотивировать других подростков не бояться выражать себя. Я стремлюсь к профессиональному росту в сфере медиа, SMM и digital‑технологий.
-    </p>
-    <h3>🧠 Увлечения</h3>
-    <ul>
-      <li>🎮 Видеоигры, стриминг, гейм-дизайн</li>
-      <li>🧱 Проектирование и создание собственных гаджетов</li>
-      <li>🏕 Спортивный туризм и активный образ жизни</li>
-      <li>📱 YouTube-культура и технологии</li>
-      <li>⚔ Навыки общения, брендинг и публичный образ</li>
-    </ul>
-    <h3>💡 Интересные факты</h3>
-    <ul>
-      <li>Веду YouTube без помощи команды</li>
-      <li>Сочетаю учёбу, спорт и творчество</li>
-      <li>Уверенно развиваю соцсети</li>
-      <li>Создаю собственное оружие, вдохновлённое Marvel</li>
-    </ul>
-  </section>
+    <section>
+        <h2>🎯 Цели и контакты</h2>
+        <p>Моя главная цель — стать узнаваемым и влиятельным интернет-персонажем, развивать личные проекты, строить качественный контент и мотивировать других подростков не бояться выражать себя. Я стремлюсь к профессиональному росту в сфере медиа, SMM и digital‑технологий.</p>
+        <ul>
+            <li>🎮 Видеоигры, стриминг, гейм-дизайн</li>
+            <li>🧱 Проектирование и создание собственных гаджетов</li>
+            <li>🏕 Спортивный туризм и активный образ жизни</li>
+            <li>📱 YouTube-культура, технологии и новинки в сфере контента</li>
+            <li>⚔ Развитие навыков общения, брендинга и публичного образа</li>
+        </ul>
+    </section>
+
+    <section class="personal-info">
+        <h2>👤 Личная информация</h2>
+        <ul>
+            <li>📍 Проживаю в Ликино-Дулёво, Московская область</li>
+            <li>📅 Дата рождения: 24 августа 2010 года</li>
+            <li>💼 Статус: Ученик</li>
+            <li>❤ Семейное положение: не в отношениях</li>
+            <li>👨‍👩‍👦 Семья:
+                <ul>
+                    <li>Мать — Зайцева Татьяна</li>
+                    <li>Отец — Панов Динис</li>
+                    <li>Брат — Панов Гордей</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        &copy; 2025 Laugeed / Нестор Сибикин
+    </footer>
 </body>
 </html>
